@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import Navbar from "../Navbar";
-import EventDetail from "../EventDetails";
+import Navbar from "../components/Navbar";
+import EventDetail from "../components/EventDetails";
 import paramour from "../assets/home/desktop/image-hero-paramour.jpg";
 import paramourTablet from "../assets/home/tablet/image-hero-paramour.jpg";
 import paramourMobile from "../assets/home/mobile/image-hero-paramour.jpg";
@@ -28,7 +28,7 @@ import secondMobile from "../assets/portfolio/mobile/image-228b.jpg";
 import third from "../assets/portfolio/desktop/image-prototype.jpg";
 import thirdTablet from "../assets/portfolio/tablet/image-prototype.jpg";
 import thirdMobile from "../assets/portfolio/mobile/image-prototype.jpg";
-import Footer from "../Footer";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const [selectedEvent, setSelectedEvent] = useState("01");

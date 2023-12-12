@@ -8,9 +8,9 @@ import jake from "../assets/about/desktop/avatar-jake.jpg";
 import thompson from "../assets/about/desktop/avatar-thompson.jpg";
 import jackson from "../assets/about/desktop/avatar-jackson.jpg";
 import maria from "../assets/about/desktop/avatar-maria.jpg";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
-import TeamMember from "../TeamMember";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import TeamMember from "../components/TeamMember";
 
 export default function About() {
   return (

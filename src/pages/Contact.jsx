@@ -9,8 +9,8 @@ import mapImgTablet from "../assets/contact/tablet/image-map.png";
 import mapImgMobile from "../assets/contact/mobile/image-map.png";
 import arrowRight from "../assets/icons/icon-arrow.svg";
 
-import Navbar from "../Navbar";
-import Footer from "../Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
