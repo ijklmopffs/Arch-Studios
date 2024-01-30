@@ -83,7 +83,7 @@ export default function Contact() {
               className="hidden md:block lg:hidden"
             />
             <img src={contactHeroMobile} alt="" className="md:hidden" />
-            <div className="absolute inset-0 bg-black opacity-20  md:w-auto"></div>
+            <div className="w-[375px] absolute inset-0 bg-black opacity-20  md:w-auto"></div>
           </div>
 
           <h1 className="font-bold md:text-[120px] lg:text-[250px] hidden md:block text-veryLightGrey absolute right-24 top-[25rem] lg:-right-4 lg:top-20 z-10">

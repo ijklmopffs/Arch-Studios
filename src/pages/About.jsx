@@ -102,7 +102,7 @@ export default function About() {
           transition={{ duration: 1.2 }}
           className="flex flex-col lg:flex-row gap-8 lg:gap-0 justify-center md:justify-between text-start my-40"
         >
-          <div className="font-bold text-7xl text-veryDarkBlue w-80">
+          <div className="font-bold text-7xl text-veryDarkBlue md:w-80 text-center md:text-start">
             <h2>The Leaders</h2>
           </div>
           <div className="flex flex-wrap gap-4 lg:gap-8 justify-center md:justify-start lg:justify-end">

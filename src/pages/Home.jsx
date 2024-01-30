@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
@@ -32,17 +32,6 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   const [selectedEvent, setSelectedEvent] = useState("01");
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const options = ["01", "02", "03", "04"];
-      const currentIndex = options.indexOf(selectedEvent);
-      const nextIndex = (currentIndex + 1) % options.length;
-      setSelectedEvent(options[nextIndex]);
-    }, 1800);
-
-    return () => clearInterval(intervalId);
-  }, [selectedEvent]);
 
   return (
     <>
@@ -104,6 +93,7 @@ export default function Home() {
 
           <div className="hidden lg:flex items-center bg-white absolute bottom-0 w-[240px] -left-20 font-bold text-lg text-mediumGrey">
             <button
+              onClick={() => setSelectedEvent("01")}
               className={
                 selectedEvent === "01"
                   ? "w-20 h-20 p-8 bg-veryDarkBlue text-white"
@@ -113,6 +103,7 @@ export default function Home() {
               01
             </button>
             <button
+              onClick={() => setSelectedEvent("02")}
               className={
                 selectedEvent === "02"
                   ? "w-20 h-20 p-8 bg-veryDarkBlue text-white"
@@ -122,6 +113,7 @@ export default function Home() {
               02
             </button>
             <button
+              onClick={() => setSelectedEvent("03")}
               className={
                 selectedEvent === "03"
                   ? "w-20 h-20 p-8 bg-veryDarkBlue text-white"
@@ -131,6 +123,7 @@ export default function Home() {
               03
             </button>
             <button
+              onClick={() => setSelectedEvent("04")}
               className={
                 selectedEvent === "04"
                   ? "w-20 h-20 p-8 bg-veryDarkBlue text-white"
